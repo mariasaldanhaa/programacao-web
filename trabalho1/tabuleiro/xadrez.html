@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xadrez</title>
+    </head>
+    <body>
+        <header>
+            <h1 align="center" valing="middle">XADREZ</h1>
+
+            <nav
+                align="center"
+                valign="middle"
+            >
+                <a href="../index.html">
+                    <big><b>Home</b></big>
+                </a>
+
+                <small>&SmallCircle;</small>
+
+                <a href="../tabela/tabela_periodica.html">
+                    <big><b>Tabela Periódica</b></big>
+                </a>
+            </nav>
+        </header>
+
+        <hr>
+
+        <br>
+        <br>
+
+        <main>
+            <!-- frame="box" - desenhar a borda externamente -->
+             <!-- rules="none" - não desenhar a borda interna em cada célula-->
+            <table
+                width="400px"
+                height="400px"
+                border="5px"
+                frame="box"
+                rules="none" 
+                cellspacing="0"
+                cellpadding="0"
+                align="center"
+                valing="middle"
+            >
+            <!-- LINHA 8 -->
+                <tr>
+                    <!-- TORRE -->
+                    <td
+                        bgcolor="#F2E4DE"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img
+                            src="../img/torre_preta.png"
+                            alt="Torre preta"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+
+                    <!-- CAVALO -->
+                    <td
+                        bgcolor="#B98B85"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/cavalo_preto.png"
+                            alt="Cavalo preto"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+
+                    <!-- BISPO -->
+                    <td
+                        bgcolor="#F2E4DE"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/bispo_preto.png"
+                            alt="Bispo preto"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+
+                    <!-- DAMA -->
+                    <td
+                        bgcolor="#B98B85"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/dama_preta.png"
+                            alt="Dama preta"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+
+                    <!-- REI -->
+                    <td
+                        bgcolor="#F2E4DE"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/rei_preto.png"
+                            alt="Rei preto"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    
+                    <!-- BISPO 2 -->
+                    <td
+                        bgcolor="#B98B85"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/bispo_preto.png"
+                            alt="Bispo preto"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+
+                    <!-- CAVALO 2 -->
+                    <td
+                        bgcolor="#F2E4DE"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/cavalo_preto.png"
+                            alt="Cavalo preto"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+
+                    <!-- TORRE 2 -->
+                    <td
+                        bgcolor="#B98B85"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/torre_preta.png"
+                            alt="Torre preta"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                </tr>
+
+                <!-- LINHA 7 -->
+                <tr>
+                    <td 
+                        bgcolor="#B98B85" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_preto.png"
+                            alt="Peão preto"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#F2E4DE"
+                        width="50px"
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_preto.png"
+                            alt="Peão preto"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#B98B85" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_preto.png"
+                            alt="Peão preto"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#F2E4DE" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_preto.png"
+                            alt="Peão preto"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#B98B85" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_preto.png"
+                            alt="Peão preto"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#F2E4DE" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_preto.png"
+                            alt="Peão preto"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#B98B85" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_preto.png"
+                            alt="Peão preto"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#F2E4DE" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_preto.png"
+                            alt="Peão preto"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                </tr>
+
+                <!-- LINHA 6-->
+
+                 <tr>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                </tr>
+
+                <!-- LINHA 5 -->
+
+                <tr>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                </tr>
+
+                <!-- LINHA 4 -->
+                <tr>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                </tr>
+
+                <!-- LINHA 3 -->
+                <tr>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                    <td bgcolor="#B98B85" width="50px" height="50px"></td>
+                    <td bgcolor="#F2E4DE" width="50px" height="50px"></td>
+                </tr>
+
+                <!-- LINHA 2 -->
+                <tr>
+                    <td 
+                        bgcolor="#F2E4DE" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_branco.png"
+                            alt="Peão branco"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#B98B85" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_branco.png"
+                            alt="Peão branco"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#F2E4DE" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_branco.png"
+                            alt="Peão branco"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#B98B85" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_branco.png"
+                            alt="Peão branco"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#F2E4DE" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_branco.png"
+                            alt="Peão branco"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#B98B85" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_branco.png"
+                            alt="Peão branco"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#F2E4DE" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_branco.png"
+                            alt="Peão branco"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    <td 
+                        bgcolor="#B98B85" 
+                        width="50px" 
+                        height="50px"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/peao_branco.png"
+                            alt="Peão branco"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                </tr>
+
+                <!-- LINHA 1 -->
+                <tr>
+                    <!-- TORRE -->
+                    <td
+                        bgcolor="#B98B85"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img
+                            src="../img/torre_branca.png"
+                            alt="Torre branca"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+
+                    <!-- CAVALO -->
+                    <td
+                        bgcolor="#F2E4DE"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/cavalo_branco.png"
+                            alt="Cavalo branco"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+
+                    <!-- BISPO -->
+                    <td
+                        bgcolor="#B98B85"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/bispo_branco.png"
+                            alt="Bispo branco"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+
+                    <!-- DAMA -->
+                    <td
+                        bgcolor="#F2E4DE"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/dama_branca.png"
+                            alt="Dama branca"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+
+                    <!-- REI -->
+                    <td
+                        bgcolor="#B98B85"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/rei_branco.png"
+                            alt="Rei branco"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                    
+                    <!-- BISPO 2 -->
+                    <td
+                        bgcolor="#F2E4DE"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/bispo_branco.png"
+                            alt="Bispo branco"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+
+                    <!-- CAVALO 2 -->
+                    <td
+                        bgcolor="#B98B85"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/cavalo_branco.png"
+                            alt="Cavalo branco"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+
+                    <!-- TORRE 2 -->
+                    <td
+                        bgcolor="#F2E4DE"
+                        align="center"
+                        valing="middle"
+                    >
+                        <img 
+                            src="../img/torre_branca.png"
+                            alt="Torre branca"
+                            width="50px"
+                            height="50px"
+                        />
+                    </td>
+                </tr>
+            </table>
+        </main>
+    </body>
