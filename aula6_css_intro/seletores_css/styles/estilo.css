@@ -1,0 +1,44 @@
+.classe1 {
+    background: blue;
+    color: white;
+}
+
+.classe2 {
+    background: yellow;
+}
+
+.classe3 {
+    font-weight: bold;
+    font-size: large;
+}
+
+.classe4 {
+    color: purple;
+}
+
+div.classe1 {
+    background: red;
+    font-size: 20px;
+} 
+
+h1,h2,h3,h4 {
+    text-decoration: underline;
+}
+
+div li {
+    background: orange;
+}
+
+div.classe3 li.classe2 {
+    background: brown;
+    color: white;
+    font-weight: normal;
+}
+
+div li#primeiro_lista1 {
+    background: fuchsia
+}
+
+div li.classe4 {
+    background: green;
+}

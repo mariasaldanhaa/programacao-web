@@ -1,0 +1,13 @@
+* {
+    background: rgb(224,200, 200);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+li {
+    background: yellow;
+}
+
+#lista4 {
+    background: blue;
+}

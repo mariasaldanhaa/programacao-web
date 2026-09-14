@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+.links {
+    margin: 50px;
+}
+
+.link {
+    padding: 10px;
+    background: red;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.link:hover {
+    box-shadow: 0 0 50px black;
+    color: blue;
+    transition: ease 0.3s;
+}
