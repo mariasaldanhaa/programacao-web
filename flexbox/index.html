@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo de uso do Flexbox</title>
+        <style>
+            * {
+                box-shadow: inset 0 0 1px black;
+            }
+
+            div {
+                width: 15%;
+            }
+
+            .container {
+                background-color: blue;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap; /* wrap - faz a quebra quando atingiu o limite de espaço na linha*/
+                justify-content: space-evenly;
+                /* 
+                    space-around: coloca um espaço entre os elementos igualmente
+                */
+                align-items: stretch;
+            }
+
+            .classe1 {
+                background-color: blue;
+                
+            }
+            .classe2 {
+                background-color: red;
+
+            }
+            .classe3 {
+                background-color: brown;
+
+            }
+            .classe4 {
+                background-color: cadetblue;
+
+            }
+            .classe5 {
+                background-color: hotpink;
+
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <div class="classe1">Perfil</div>
+            <div class="classe2">Arquivo</div>
+            <div class="classe3">Cadastro</div>
+            <div class="classe4">Relatório</div>
+            <div class="classe5">Sair</div>
+            <!-- Conceitos
+                Flow layout - estrutura padrão de página
+                display: flex - não foi estabelecido o posicionamento, mas pode estabelecer
+                com flex direction
+                row
+                column-reverse
+                row-reverse
+                display: inline-block - coloca em uma coluna-->
+        </section>
+    </body>

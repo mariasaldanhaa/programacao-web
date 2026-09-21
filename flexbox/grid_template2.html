@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>:: LOREM ::</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-shadow: inset 0 0 2px black;
+            }
+
+            p, h1, h2, h3, h4, h5, h6 {
+                box-shadow: none;
+            }
+
+            h5 {
+                font-size: 12px;
+                font-weight: normal;
+                text-align: right;
+            }
+
+            .container {
+                display: grid;
+                height: 100vh;
+                grid-template: 
+                [row1-start] "header header" 10vh [row1-end]
+                [row2-start] "nav content" auto [row2-end]
+                [row3-start] "footer footer" 10vh [row3-end];
+            }
+
+            div {
+                padding: 10px;
+            }
+
+            .banner {
+                grid-area: header;
+                background-image: url(imagens/banner.jpg);
+                text-align: center;
+                font: 20px sans-serif;
+                background-size: cover;
+            }
+
+            .menu {
+                grid-area: nav;
+                background-image: url(imagens/backgroud.jpg);
+                background-size: cover;
+                text-align: center;
+                font: 20px sans-serif;            
+            }
+
+            .conteudo {
+                grid-area: content;
+                text-align: justify;
+                font: 15px sans-serif
+            }
+
+            .rodape {
+                grid-area: footer;
+                background: linear-gradient(to top, rgb(254, 178, 91), rgb(252, 218, 93));
+            }
+
+            button {
+                border-radius: 10px;
+                border-style: none;
+                justify-content: center;
+                background-color: #0064EA;
+                font: 20px sans-serif;
+                padding: 5px;
+            }
+
+            img {
+                height: 40%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <div class="banner">Banner</div>
+            <div class="menu">
+                Menu 
+                <br/>
+                <button>Botao</button>
+            </div>
+            <div class="conteudo">
+                <h3>LOREM</h3>
+                <br>
+                <p>
+                    De tudo, ao meu amor serei atento
+                    Antes, e com tal zelo, e sempre, e tanto
+                    Que mesmo em face do maior encanto
+                    Dele se encante mais meu pensamento.<br/><br/>
+
+                    Quero vivê-lo em cada vão momento
+                    E em louvor hei de espalhar meu canto
+                    E rir meu riso e derramar meu pranto
+                    Ao seu pesar ou seu contentamento. <br/><br/>
+
+                    E assim, quando mais tarde me procure
+                    Quem sabe a morte, angústia de quem vive
+                    Quem sabe a solidão, fim de quem ama <br/><br/>
+
+                    Eu possa me dizer do amor (que tive):
+                    Que não seja imortal, posto que é chama
+                    Mas que seja infinito enquanto dure.
+                </p>
+                <img src="/flexbox/imagens/image.jpg"/>
+                <br>
+                <h5>Lorem</h5>
+            </div>
+            <div class="rodape">Rodapé</div>
+        </section>
+    </body>
