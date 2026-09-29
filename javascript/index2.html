@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 1 - JavaScript</title>
+        <link rel="stylesheet" href="style/estilo.css"/>
+    </head>
+    <body>
+        <button>Iniciar processos...</button>
+
+        <script>
+            function funcao1() {
+                console.log('Processo 1 chamado...');
+            }
+
+            function funcao2() {
+                console.log('Processo 2 chamado...');
+            }
+
+            function zueira() {
+                let a = 0;
+                for (let t = 0; t < 5; t++) {
+                    a++;
+                    alert(a);
+                }
+                alert('Obrigado por esperar!');
+            }
+
+            // adicionando a funcao 1 ao botao
+            // querySelector - neste documento pesquise o elemento 'button'
+            // addEventListener - adiciona um evento
+            document.querySelector("button").addEventListener('click', 
+                () => {
+                    funcao1();
+                    funcao2();
+                    zueira();
+                }
+            );
+        </script>
+    </body>

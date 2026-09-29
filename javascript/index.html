@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 1 - JavaScript</title>
+        <link rel="stylesheet" href="style/estilo.css"/>
+        <script>
+            function mostrarMensagem() {
+                alert("Hello World dentro de uma função!");
+            }
+
+            function Imprimir() {
+                window.print("Imprimiu");
+            }
+        </script>
+    </head>
+    <body>
+        <input 
+            type="button"
+            value="Acionar"
+            onclick="mostrarMensagem()"
+        />
+
+        <input 
+            type="button"
+            value="Imprimir"
+            onmouseout="Imprimir()"
+        />
+
+        <!-- onchange - captura cada mudanca -->
+        <h1 class="titulo">Aula 1 -  JavaScript</h1>
+        <p>
+            Nessa aula vamos aprender os conceitos básicos de JavaScript!
+        </p>
+        <img 
+            src="img/nazare.png"
+        />
+    </body>
