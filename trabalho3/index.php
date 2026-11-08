@@ -1,17 +1,13 @@
 <?php
-session_start();
+    session_start();
 
-$mensagem = '';
+    $mensagem = '';
 
-if (isset($_SESSION['erro'])) {
-    $mensagem = $_SESSION['erro'];
+    if (isset($_SESSION['erro'])) {
+        $mensagem = $_SESSION['erro'];
 
-    unset($_SESSION['erro']); // limpando a mensagem ao reiniciar a pagina
-}
-
-if (isset($_SESSION['login'])) {
-    $mensagem = 'Você já está logado no sistema';
-}
+        unset($_SESSION['erro']); // limpando a mensagem ao reiniciar a pagina
+    }
 ?>
 
 <!DOCTYPE html>
@@ -20,19 +16,20 @@ if (isset($_SESSION['login'])) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>IFCard</title>
-        <link rel="icon" type="image/x-icon" href="images/"/>
+        <link rel="icon" type="image/x-icon" href="images/favicon.svg"/>
         <link rel="stylesheet" href="css/style_index.css"/>
     </head>
     <body>
-        <div>
+        <div class="login">
             <img
-                src="images/"
+                src="images/logo_ifcard.png"
                 alt="Logo do IFCard"
+                id="logo-ifmg"
             />
             
             <br/>
 
-            <span>
+            <span id="spanLogin">
                 Login
             </span>
 
@@ -50,10 +47,10 @@ if (isset($_SESSION['login'])) {
             <!-- FORMULÁRIO -->
             <form action="login.php" method="post">
                 <!-- CAMPOS DE LOGIN -->
-                <div>
+                <div class="campos">
                     <div>
                         <!-- CAMPO DE USUÁRIO -->
-                        <label for="login-usuario">
+                        <label for="login-usuario" id="usuario">
                             Usuário: 
                         </label>
 
@@ -68,7 +65,7 @@ if (isset($_SESSION['login'])) {
 
                     <!-- CAMPO DE SENHA-->
                     <div>
-                        <label for="senha-usuario">
+                        <label for="senha-usuario" id="senha">
                             Senha:
                         </label>
 
@@ -81,7 +78,7 @@ if (isset($_SESSION['login'])) {
                         />
                     </div>
 
-                    <button type="submit">
+                    <button type="submit" id="btnAcessar">
                         Acessar
                     </button>
                 </div>

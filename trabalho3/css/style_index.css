@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #eef5ee;
+}
+
+.login {
+    width: 520px;
+    margin: 5% auto;
+    padding: 10px 0 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+#logo-ifmg {
+    width: auto;
+    height: 95px;
+    margin: 3%;
+}
+
+#spanLogin {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.campos {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#usuario {
+    font-weight: 500;
+}
+
+#login-usuario, #senha-usuario {
+    border: 1px solid #999;
+    border-radius: 5px;
+    height: 35px;
+    width: 400px;
+    padding: 0 10px;
+
+    &:hover {
+        border-color: rgb(3, 93, 0);
+    }
+}
+
+#btnAcessar {
+    border: none;
+    border-radius: 10px;
+    margin: 1%;
+    height: 50px;
+    width: 400px;
+    background-color: rgb(3, 93, 0);
+    color: white;
+    font-weight: 600;
+
+    &:hover {
+        cursor: pointer;
+        background: rgb(18, 162, 13);
+    }
+}

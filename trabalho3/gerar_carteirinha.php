@@ -1,5 +1,12 @@
 <?php
-session_start();
+    session_start();
+
+    if (isset($_SESSION['login'])) {
+        $_SESSION['nome'] = $_POST['txtNome'];
+        $_SESSION['cpf'] = $_POST['txtCPF'];
+        $_SESSION['dataNascimento'] = $_POST['dtNascimento'];
+        $_SESSION['curso'] = $_POST['slcCurso'];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +15,7 @@ session_start();
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gerar carteirinha</title>
-        <link rel="icon" type="image/x-icon" href="images/"/>
+        <link rel="icon" type="image/x-icon" href="images/favicon.svg"/>
         <link rel="stylesheet" href="css/style_gerar.css"/>
     </head>
     <body>
@@ -52,6 +59,7 @@ session_start();
                     </td>
                 </tr>
 
+                <!-- CAMPO DE FOTO -->
                 <tr>
                     <td>
                         <label for="fileFoto">Foto:</label>
@@ -76,5 +84,7 @@ session_start();
                 </tr>
             </table>
         </form>
+
+        <a href="logout.php" id="link-sair">Sair do Sistema</a>
     </body>
 </html>
